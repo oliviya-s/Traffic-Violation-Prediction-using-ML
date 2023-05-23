@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interface</title>
+  <style type = "text/css">
+    label{
+      width:240px;
+      display: inline-block;
+      margin: 0.2cm;
+      font-size: 16px;
+    }
+    #form{
+      max-width:m500px;
+      margin: auto;
+      border-radius: 20px;
+      background:black;
+      color: #ffffff;
+      width: 20cm;
+      padding:10px 20px;
+    }
+    h2{
+      text-align: center;
+    }
+    #submit{
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body style="background: rgb(167, 172, 172);">
+<div id="form">
+  <h1><center>System for predicting Traffic Violations Using machine Learning</center></h1>
+  <form action="/predict" method="POST">
+    <label for="text">openness:</label>
+    <input type="text" id="text" name="openness" required><br><br>
+
+    <label for="text">conscientiousness:</label>
+    <input type="text" id="text" name="conscientiousness"required><br><br>
+
+    <label for="text">extroversion:</label>
+    <input type="text" id="text" name="extroversion"required><br><br>
+
+    <label for="text">agreeableness:</label>
+    <input type="text" id="text" name="agreeableness" required><br><br>
+
+    <label for="text">neuroticism:</label>
+    <input type="text" id="text" name="neuroticism" required><br><br>
+
+    <label for="text">anxietybasedperformancedeficits:</label>
+    <input type="text" id="text" name="anxietybasedperformancedeficits"required><br><br>
+
+    <label for="text">exaggeratedsafetybehavior:</label>
+    <input type="text" id="text" name="exaggeratedsafetybehavior" required><br><br>
+
+    <label for="text">hostilebehaviors:</label>
+    <input type="text" id="text" name="hostilebehaviors" required><br><br>
+
+    <label for="text">Gender:</label>
+    <input type="text" id="text" name="Gender" required><br><br>
+
+    <label for="text">Age:</label>
+    <input type="text" id="text" name="Age"required><br><br>
+  
+    
+    <p><input type="submit" id="submit" value="Predict" ></p>
+
+  </form>
+</div>
+</body>
+</html>
