@@ -1,0 +1,103 @@
+<html>
+<head>
+  <title>Interface</title>
+  <style type = "text/css">
+    label{
+      width:240px;
+      display: inline-block;
+      margin: 0.2cm;
+      font-size: 16px;
+    }
+    #form{
+      max-width:m500px;
+      margin: auto;
+      border-radius: 20px;
+      background:black;
+      color: #ffffff;
+      width: 20cm;
+      padding:10px 20px;
+    }
+    h1{
+      text-align: center;
+    }
+    #submit{
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+  <script src="checkradio.js"></script>
+</head>
+<body style="background: rgb(167, 172, 172);">
+  <button onclick="valueset1()">result</button>
+<div id="form">
+  <h1><center>System for predicting Traffic Violations Using machine Learning</center></h1>
+  <form action="/predict" method="POST">
+    <label for="text">openness:</label>
+    <input type="text" id="openness" name="openness"  ><br><br>
+
+    <label for="text">conscientiousness:</label>
+    <input type="text" id="conscientiousness" name="conscientiousness" value=""><br><br>
+
+    <label for="text">extroversion:</label>
+    <input type="text" id="extroversion" name="extroversion"value="" ><br><br>
+
+    <label for="text">agreeableness:</label>
+    <input type="text" id="agreeableness" name="agreeableness" value=""  ><br><br>
+
+    <label for="text">neuroticism:</label>
+    <input type="text" id="neuroticism" name="neuroticism"  value=""><br><br>
+
+    <label for="text">anxietybasedperformancedeficits:</label>
+    <input type="text" id="anxietybasedperformancedeficits" name="anxietybasedperformancedeficits" value="" ><br><br>
+
+    <label for="text">exaggeratedsafetybehavior:</label>
+    <input type="text" id="exaggeratedsafetybehavior" name="exaggeratedsafetybehavior" value=""  ><br><br>
+
+    <label for="text">hostilebehaviors:</label>
+    <input type="text" id="hostilebehaviors" name="hostilebehaviors" value="" ><br><br>
+ 
+  
+    
+    <p><input type="submit" id="submit" value="Predict" ></p>
+
+  </form>
+</div>
+<script>
+  function valueset1()
+{
+    // window.location.href =("main_int.html");
+    
+    const openness = localStorage.getItem('openness');
+    const conscientiousness = localStorage.getItem('conscientiousness');
+    const extroversion = localStorage.getItem('extroversion');
+    const agreeableness = localStorage.getItem('agreeableness');
+    const neuroticism = localStorage.getItem('neuroticism');
+    const anxietybasedperformancedeficits = localStorage.getItem('anxietybasedperformancedeficits');
+    const exaggeratedsafetybehavior = localStorage.getItem('exaggeratedsafetybehavior');
+    const hostilebehaviors = localStorage.getItem('hostilebehaviors');
+
+    
+console.log("hello");
+document.getElementById("openness").value=openness;
+document.getElementById("conscientiousness").value=conscientiousness;
+document.getElementById("extroversion").value=extroversion;
+document.getElementById("agreeableness").value=agreeableness;
+document.getElementById("neuroticism").value=neuroticism;
+document.getElementById("anxietybasedperformancedeficits").value=anxietybasedperformancedeficits;
+document.getElementById("exaggeratedsafetybehavior").value=exaggeratedsafetybehavior;
+document.getElementById("hostilebehaviors").value=hostilebehaviors;
+console.log(openness);
+
+console.log(conscientiousness);
+console.log(extroversion);
+console.log(agreeableness);
+console.log(neuroticism);
+console.log(anxietybasedperformancedeficits);
+console.log(exaggeratedsafetybehavior);
+console.log(hostilebehaviors);
+}
+
+
+</script>
+</body>
+</html>
