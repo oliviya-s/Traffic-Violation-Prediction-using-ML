@@ -2,30 +2,32 @@
 <html>
  <head>
    <title>freeCodeCamp Survey Form</title>
-   <link rel="stylesheet" href="styles.css">
+   <!-- <link rel="stylesheet" href="styles.css"> -->
    <style>
      h1{
        font-size: 50pt;
        text-align: center;
      }
      p{
-       font-size: 20pt;
+       font-size: 25pt;
        
      }
      #dv{
-       font-size: 15pt;
+       font-size: 20pt;
        
      }
      
    </style>
-   <script src="checkradio.js"></script>
+   <!-- <script src="checkradio.js"></script> -->
+   <script src="{{ url_for('static', filename='js/script.js') }}"></script>
  </head>
 <body style="background: rgb(167, 172, 172);">
   <h1>Traffic Violations Prediction System Survey</h1>
+  <h2>BFIS Survey</h2>
   <p>I see myself as someone who ...</p>
    
   <form  method="Post">
-  <div id="dv" >
+  <div  id="dv">
         <label for= "qu-1" id="label-qu-1">1. worries a lot</label>
         <br><br>
         <label for="agree-1" id="label-agree-1"><input type="radio" id="agree-1" name="agree1" value=1>strongly disagree </input></label>
@@ -39,7 +41,7 @@
       <br>
       <br>
 
-      <div >
+      <div  id="dv">
         <label for= "qu-2" id="label-qu-2">2.gets nervous easily</label>
         <br><br>
         <label for="agree-1" id="label-agree-1"><input type="radio" id="agree-1" name="agree2" value=1>strongly disagree </input></label>
@@ -52,7 +54,7 @@
       </div>
       <br>
       <br>
-      <div >
+      <div  id="dv">
         <label for= "qu-3" id="label-qu-3">3. remains calm in tense situations</label>
         <br><br>
         <label for="agree-1" id="label-agree-1"><input type="radio" id="agree-1" name="agree3" value=1>strongly disagree </input></label>
@@ -65,7 +67,7 @@
       </div>
       <br>
       <br>
-      <div >
+      <div  id="dv">
         <label for= "qu-4" id="label-qu-4">4. is talkative</label>
         <br><br>
         <label for="agree-1" id="label-agree-1"><input type="radio" id="agree-1" name="agree4" value=1>strongly disagree </input></label>
@@ -78,7 +80,7 @@
       </div>
       <br>
       <br>
-      <div >
+      <div  id="dv" >
         <label for= "qu-5" id="label-qu-5">5. is outgoing, sociable</label>
         <br><br>
         <label for="agree-1" id="label-agree-1"><input type="radio" id="agree-1" name="agree5" value=1>strongly disagree </input></label>
@@ -91,7 +93,7 @@
       </div>
       <br>
       <br>
-      <div >
+      <div  id="dv">
         <label for= "qu-6" id="label-qu-6">6. is reserved</label>
         <br><br>
         <label for="agree-1" id="label-agree-1"><input type="radio" id="agree-1" name="agree6" value=1>strongly disagree </input></label>
@@ -104,7 +106,7 @@
       </div>
       <br>
       <br>
-      <div >
+      <div  id="dv">
         <label for= "qu-7" id="label-qu-7">7. is original, comes up with new ideas</label>
         <br><br>
         <label for="agree-1" id="label-agree-1"><input type="radio" id="agree-1" name="agree7" value=1>strongly disagree </input></label>
@@ -117,7 +119,7 @@
       </div>
       <br>
       <br>
-      <div >
+      <div  id="dv">
         <label for= "qu-8" id="label-qu-8">8. values artistic, aesthetic experiences</label>
         <br><br>
         <label for="agree-1" id="label-agree-1"><input type="radio" id="agree-1" name="agree8" value=1>strongly disagree </input></label>
@@ -130,7 +132,7 @@
       </div>
       <br>
       <br>
-      <div >
+      <div  id="dv">
         <label for= "qu-9" id="label-qu-9">9. has an active imagination</label>
         <br><br>
         <label for="agree-1" id="label-agree-1"><input type="radio" id="agree-1" name="agree9" value=1>strongly disagree </input></label>
@@ -143,7 +145,7 @@
       </div>
       <br>
       <br>
-      <div >
+      <div  id="dv">
         <label for= "qu-10" id="label-qu-10">10. is sometimes rude to others</label>
         <br><br>
         <label for="agree-1" id="label-agree-1"><input type="radio" id="agree-1" name="agree10" value=1>strongly disagree </input></label>
@@ -156,7 +158,7 @@
       </div>
       <br>
       <br>
-      <div >
+      <div  id="dv">
         <label for= "qu-11" id="label-qu-11">11. has a forgiving nature</label>
         <br><br>
         <label for="agree-1" id="label-agree-1"><input type="radio" id="agree-1" name="agree11" value=1>strongly disagree </input></label>
@@ -169,7 +171,7 @@
       </div>
       <br>
       <br>
-      <div >
+      <div  id="dv">
         <label for= "qu-12" id="label-qu-12">12. is considerate and kind to almost everyone</label>
         <br><br>
         <label for="agree-1" id="label-agree-1"><input type="radio" id="agree-1" name="agree12" value=1>strongly disagree </input></label>
@@ -182,7 +184,7 @@
       </div>
       <br>
       <br>
-      <div >
+      <div  id="dv">
         <label for= "qu-13" id="label-qu-13">13. does a thorough job</label>
         <br><br>
         <label for="agree-1" id="label-agree-1"><input type="radio" id="agree-1" name="agree13" value=1>strongly disagree </input></label>
@@ -195,7 +197,7 @@
       </div>
       <br>
       <br>
-      <div >
+      <div  id="dv">
         <label for= "qu-14" id="label-qu-14">14. tends to be lazy</label>
         <br><br>
         <label for="agree-1" id="label-agree-1"><input type="radio" id="agree-1" name="agree14" value=1>strongly disagree </input></label>
@@ -208,7 +210,7 @@
       </div>
       <br>
       <br>
-      <div >
+      <div  id="dv">
         <label for= "qu-15" id="label-qu-15">15. does things efficiently</label>
         <br><br>
         <label for="agree-1" id="label-agree-1"><input type="radio" id="agree-1" name="agree15" value=1>strongly disagree </input></label>
@@ -223,7 +225,7 @@
       
   </form>
     <center><button onclick="checkRadioButton()">submit</button></center>
-    <center><a href="PROJECT_INTERFACE2.html">Next page</a></center>
+    <center><a href="/page2">Next page</a></center>
         <br>
     
 

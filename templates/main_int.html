@@ -9,7 +9,7 @@
       font-size: 16px;
     }
     #form{
-      max-width:m500px;
+      max-width:700px;
       margin: auto;
       border-radius: 20px;
       background:black;
@@ -25,12 +25,15 @@
       margin-top: 10px;
     }
   </style>
-  <script src="checkradio.js"></script>
+  <!-- <script src="checkradio.js"></script> -->
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </head>
 <body style="background: rgb(167, 172, 172);">
-  <button onclick="valueset1()">result</button>
+  <br><br>
+  <center><button onclick="valueset1()">Display the Parameters</button></center>
+  <br><br>
 <div id="form">
-  <h1><center>System for predicting Traffic Violations Using machine Learning</center></h1>
+ 
   <form action="/predict" method="POST">
     <label for="text">openness:</label>
     <input type="text" id="openness" name="openness"  ><br><br>
